@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "youtube-music-account-migrator"
+version = "0.1.0"
+description = ""
+authors = ["edd.grant <edd@eddgrant.com>"]
+readme = "README.md"
+packages = [{include = "youtube_music_account_migrator"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ytmusicapi = "^1.1.1"
+
+[tool.poetry.scripts]
+dry_run_migration = "youtube_music_account_migrator.ytma:do_dry_run_migration"
+migrate = "youtube_music_account_migrator.ytma:migrate"
+oauth-old-account = "youtube_music_account_migrator.ytma:oauth_old_account"
+oauth-new-account = "youtube_music_account_migrator.ytma:oauth_new_account"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
