@@ -146,20 +146,17 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "ytmusicapi"
-version = "1.2.1"
+version = "1.10.3"
 description = "Unofficial API for YouTube Music"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 files = [
-    {file = "ytmusicapi-1.2.1-py3-none-any.whl", hash = "sha256:ef5c061910c913db8a4a83a402bff75c03b76d6ff441f70606398883fcdb9a8a"},
-    {file = "ytmusicapi-1.2.1.tar.gz", hash = "sha256:f66a74fe8213616b38b1a5337457e6afd7b5ad168960ce9cc7ff79de6b8d16e6"},
+    {file = "ytmusicapi-1.10.3-py3-none-any.whl", hash = "sha256:07059d6a60d824636edc4032c30603f45f8072961821c6159e33d61cd02fc451"},
+    {file = "ytmusicapi-1.10.3.tar.gz", hash = "sha256:7235361ac9d5958d49a29f586eec55b1c83e90f7b063361e8a206e1cf4f76216"},
 ]
 
 [package.dependencies]
 requests = ">=2.22"
-
-[package.extras]
-dev = ["coverage", "flake8", "pre-commit", "sphinx", "sphinx-rtd-theme", "yapf"]
 
 [metadata]
 lock-version = "2.0"
